@@ -1,10 +1,10 @@
-Group Name   :
-Website Title:
-Group Leader :
-Group Member1:
-Group Member2:
-Group Member3:
-Group Member4:
+Group Name   : UpSet
+Website Title: EcoNautica
+Group Leader : Shend Jakupi
+Group Member1: Kron Basholli
+Group Member2: Thrasyvoulos Tsatlidis
+Group Member3: Giorgos Triantafyllidis
+Group Member4: Charalampos-Arsenios David
 
 ## Instructions:
 - clone this repo
