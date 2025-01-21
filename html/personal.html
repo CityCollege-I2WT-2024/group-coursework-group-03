@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Econautica - Ocean Cleanup Company</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--color-background);
+      animation: BackGroundTransition 25s infinite;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  background-image: url("../attachments/image1.avif");
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-attachment: fixed;
+      
+    }
+
+    .title{
+      text-align: center;
+      margin:15px auto;
+      display:block;
+    color: var(--color-background);
+    background-color: var(--color-main);
+    border-radius: 10px;
+    padding: 9px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 400px;
+    }
+   
+
+    .title:hover{
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transform: translateY(-6px);
+ 
+      
+    }
+
+  
+
+    .hero {
+      background-color: #00B8D4;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+     p {
+      font-size: 1.8rem;
+    }
+
+    .section {
+      padding: 20px;
+      background-color: white;
+      margin: 20px 0;
+      display: none;
+    }
+
+    h3{
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    .services, .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+     .team-member {
+      background-color: var(--color-secondary);
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      width: 290px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+     
+
+    }
+    .team-member:hover{
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transform: translateY(-6px);
+      cursor:pointer;
+    }
+
+    .service h3, .team-member h3 {
+      font-size: 1.6rem;
+    }
+
+    section:target {
+      display: block;
+    }
+
+    section {
+      display: none;
+    }
+
+    /* Kron Basholli */
+@keyframes BackGroundTransition {
+  0% {
+    background-image: url("../attachments/image1.avif");
+    background-size: cover;
+  }
+  25% {
+    background-image: url("../attachments/image2.webp");
+    background-size: cover;
+  }
+  50% {
+    background-image: url("../attachments/image3.jpg");
+    background-size: cover;
+  }
+  75% {
+    background-image: url("../attachments/image4.webp");
+    background-size: cover;
+  }
+  100% {
+    background-image: url("../attachments/image1.avif");
+  }
+}
+/* End of Kron Basholli */
+  </style>
+</head>
+<body>
+  
+    <h2 class="title">Our Team Members</h2>
+    <div class="team">
+      <div class="team-member ">
+        <h3>Shend Jakupi</h3>
+        <p>I was born on November 13th 2005, and I am from Kosova. Currently I am studying Computer Science 
+          in York City College, Thessaloniki. Some of the activities I enjoy doing most are: Riding my bicycle,
+          going for hikes, exercising and listening to music.
+          I have worked on a few sections of the site, and have also contributed to making the header and footer,
+          including the overall layout of every section.
+        </p>
+      </div>
+      <div class="team-member">
+        <h3>Kron Basholli</h3>
+        <p>Hello, I am Kron. I was born on October 3rd 2006, in Kosova. I am currently studying Computer Science
+          in York City College, in Greece. A few of my interests and hobbies are: Listening to music, exercising in
+          the gym, and studying hard.
+          I have worked on the CSS design/layout of mostly all parts of the website. And also added the 'What is Track the Action' page of the website.
+        </p>
+      </div>
+      <div class="team-member">
+        <h3>Giorgos Triantafyllidis</h3>
+        <p>I am Giorgos. I am 24 years old, was born and raised in Thessaloniki, Greece. I studied
+          mechatronics and worked in BMW as a car mechanic. I am currently studying Computer Science in York 
+          City College, in Greece. Some of my hobbies are: Playing basketball, going to the cinema and going
+          to the gym.
+          For the website, I have developed this personal page about each team member.
+        </p>
+      </div>
+      <div class="team-member">
+        <h3>Thrasyvoulos Tsatlidis</h3>
+        <p>I was born on September 26th 2004, and I come from Greece.
+           I am a first-year Computer Science student at CITY College, University of York. 
+          In my free time, I enjoy playing basketball, video games, listening to music and watching TV.
+        My contribution to the site lies in the creation of "Track The Action". </p>
+      </div>
+      <div class="team-member">
+        <h3>Charalampos David</h3>
+        <p>Hello, my name is Charalampos and I was born in August 26th 2005, in Greece.
+          I am currently a Computer Science student at CITY College, University of York, in Thessaloniki.
+          My contribution to the website is as follows: I developed the donation page with the form 
+          that contains the personal information, the donation options and the payment method.
+        </p>
+      </div>
+    </div>
+</body>
+</html>

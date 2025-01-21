@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>EcoNautica: Track Our Ships page</title>
+        <link rel="icon" type="image/svg+xml" href="./images/logo.svg"/>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet"/>
+        <style>
+            .space{
+                margin: 20px 30px;
+                background-color: var(--color-secondary);
+                border: 1px solid var(--color-secondary);
+                border-radius: 10px;
+                display: inline-block;
+                padding: 5px;
+                color: var(--color-background);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            }
+            .space:hover{
+                transform: translateY(-6px);
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+                background-color: var(--color-main);
+            }
+           /* Kron Basholli*/
+            body{
+            
+           animation: BackGroundTransition 25s infinite;
+           background-size:cover;
+           background-repeat: no-repeat;
+           background-position:center;
+           transition: background-image 1s ease-in-out;
+           margin: 0;
+           padding:0;
+           background-image: url("../attachments/image1.avif");
+           flex-direction: column;
+           justify-content: space-between;
+           
+
+        }
+        /* End of Kron Basholli*/
+       
+            .content-table{
+                position: relative;
+                /*top: 10px;*/
+                left: 30px;
+                border-collapse: collapse;
+                margin: 15px 0px;
+                height: 300px;
+                text-align: center;
+                border: 5px solid var(--color-main);
+                
+                
+            }
+            .content-table thead tr{
+                background-color: #607ea6;
+                color: #f2efdf;
+                font-weight: bold;
+            }
+            .content-table th td{
+                padding: 12px 15px;
+            }
+            .content-table tbody tr{
+                border-bottom: 1px solid #607ea6;
+            }
+            .content-table tbody tr:nth-of-type(even){
+                background-color: var(--color-secondary);
+            }
+            .content-table tbody tr:last-of-type{
+                border-bottom: 2px solid #607ea6;
+            }
+            .even-row{
+                background-color:var(--color-background);
+            }
+            .slider{
+                position: absolute;
+                top: 30px;
+                right: 90px;
+                width: 30%;
+                margin:auto;
+                overflow: visible;
+                
+            }
+            .slider img{
+                width: 100%;
+                display: none;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                border: 10px solid var(--color-secondary);
+                
+            }
+            img.displaySlide{
+                display: block;
+                animation-name: fade;
+                animation-duration: 1.5s;
+                
+            }
+            .slider button{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 2rem;
+                padding: 10px 15px;
+                background-color: hsla(0,0%, 0%, 0.5);
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            .prev{
+                left: 0;
+            }
+            .next{
+                right: 0;
+            }
+            @keyframes fade{
+                from {opacity: .5}
+                to {opacity: 1}
+            }
+            #fleet{
+                position: absolute;
+                top: 430px;
+                
+            }
+/* Kron Basholli */
+            @keyframes BackGroundTransition {
+
+0%{
+    background-image: url("../attachments/image1.avif");
+    background-size: cover;
+}
+25%{
+    background-image: url("../attachments/image2.webp");
+    background-size: cover;
+}
+50%{
+    background-image: url("../attachments/image3.jpg");
+    background-size: cover;
+}          
+75%{
+    background-image: url("../attachments/image4.webp");
+    background-size: cover;
+
+}
+100%{
+    background-image: url("../attachments/image1.avif");
+}
+}
+/* End of Kron Basholli */
+
+        </style>
+    </head>
+    <body>
+
+      
+
+        <div class="main" id="main">
+         <a href="WhatIsTrackTheAction.html">   <h1 class="space">What is 'Track the Action'?</h1> </a>
+            
+            
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th>Ship Name</th>
+                        <th>Current Location(Lat, Long)</th>
+                        <th>Destination</th>
+                        <th>Speed(knots)</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="even-row">
+                        <td>Ocean Guardian</td>
+                        <td>33.43°N, 118.15°W<br>(Port of Los Angeles, Los Angeles)</td>
+                        <td>Honolulu Harbor, Hawaii (21.30°N, 157.87°W)</td>
+                        <td>15</td>
+                        <td>En Route</td>
+                    </tr>
+                    <tr>
+                        <td>Aqua Defender</td>
+                        <td>40.40°N, 74.02°W<br>(Port of New York and New Jersey, New York)</td>
+                        <td>Royal Naval Dockyard, Bermuda<br>(32.32°N, 64.83°W)</td>
+                        <td>12</td>                            
+                        <td>En Route</td>
+                    </tr>
+                    <tr class="even-row">
+                        <td>Neptune's Hand</td>
+                        <td>51.26°N, 0.22°W<br>(Port of London Authority, London)</td>
+                        <td>Port of Rotterdam, Rotterdam<br>(51.53°N, 4.17°E)</td>
+                        <td>18</td>
+                        <td>Docked(Repairs)</td>
+                    </tr>
+                    <tr>
+                        <td>Blue Horizon</td>
+                        <td>37.79°N, 122.39°W<br>(San Francisco Ferry Building, San Francisco)</td>
+                        <td>Port of Anchorage, Alaska<br>(61.14°N, 149.53°W)</td>
+                        <td>20</td>
+                        <td>En Route</td>
+                    </tr>
+                    <tr class="even-row">
+                        <td>Marine Sentinel</td>
+                        <td>18.57°N, 72.57°E<br>(Nhava Sheva Port, India)</td>
+                        <td>Maldives Ports Limited, Maldives<br>(4.17°N, 73.50°E)</td>
+                        <td>14</td>
+                        <td>En Route</td>
+                    </tr>
+                    <tr>
+                        <td>Coral Voyager</td>
+                        <td>25.77°N, 80.17°W<br>(PortMiami, Miami)</td>
+                        <td>Freeport Port, Bahamas<br>(26.53°N, 78.77°W)</td>
+                        <td>10</td>
+                        <td>Docked(Supplies)</td>
+                    </tr>
+                    <tr class="even-row">
+                        <td>Eco Navigator</td>
+                        <td>35.61°N, 139.79°E<br>(Tokyo Harbor, Tokyo)</td>
+                        <td>Port of Guam, Guam<br>(13.27°N, 144.40°E)</td>
+                        <td>16</td>
+                        <td>En Route</td>
+                    </tr>
+                    <tr>
+                        <td>Sea Cleaner</td>
+                        <td>33.51°S, 151.14°E<br>(Port Jackson Bay, Sydney)</td>
+                        <td>Fiji Ports Corporation Limited, Fiji<br>(18.12°S, 178.42°E)</td>
+                        <td>12</td>
+                        <td>En Route</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="slider">
+                <!-- The images in the slider were created with GenAI(Leonardo.Ai) -->
+                <div class="slides">
+                    <a href="#ocean-guardian"><img class="slide" src="../images/Thras/OceanGuardian.jpg" alt="Image #1"></a>
+                    <a href="#aqua-defender"><img class="slide" src="../images/Thras/AquaDefender.jpg" alt="Image #2"></a>
+                    <a href="#neptune's-hand"><img class="slide" src="../images/Thras/Neptune'sHand.jpg" alt="Image #3"></a>
+                    <a href="#blue-horizon"><img class="slide" src="../images/Thras/BlueHorizon.jpg" alt="Image #4"></a>
+                    <a href="#marine-sentinel"><img class="slide" src="../images/Thras/MarineSentinel.jpg" alt="Image #5"></a>
+                    <a href="#coral-voyager"><img class="slide" src="../images/Thras/CoralVoyager.jpg" alt="Image #6"></a>
+                    <a href="#eco-navigator"><img class="slide" src="../images/Thras/EcoNavigator.jpg" alt="Image #7"></a>
+                    <a href="#sea-cleaner"><img class="slide" src="../images/Thras/SeaCleaner.jpg" alt="Image #8"></a>
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094</button>
+                <button class="next" onclick="nextSlide()">&#10095</button>
+            </div>
+                
+            <script>
+            const slides = document.querySelectorAll(".slides img");
+            let slideIndex = 0;
+            let intervalId = null;
+                
+            document.addEventListener("DOMContentLoaded", initializeSlider);
+                
+            function initializeSlider(){
+                if(slides.length > 0){
+                    slides[slideIndex].classList.add("displaySlide");
+                    intervalId = setInterval(nextSlide, 5000);
+                }
+            }
+            function showSlide(index){
+                    
+                if(index >= slides.length){
+                    slideIndex = 0;
+                }
+                else if(index < 0){
+                    slideIndex = slides.length - 1;
+                }
+                    
+                slides.forEach(slide => {
+                    slide.classList.remove("displaySlide");
+                });
+                slides[slideIndex].classList.add("displaySlide");
+                }
+            function prevSlide(){
+                clearInterval(intervalId);
+                slideIndex--;
+                showSlide(slideIndex);
+            }
+            function nextSlide(){
+                slideIndex++;
+                showSlide(slideIndex);
+            }
+            </script>
+            
+           
+        </div>
+
+        
+    </body>
+</html>

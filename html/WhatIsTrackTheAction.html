@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+     <!-- Kron Basholli and Shend Jakupi -->
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      h1 {
+        font-size: 1.6em;
+        font-style: oblique;
+        text-align: center;
+        background-color: black;
+        color: white;
+      }
+      p{
+        font-size: 0.8rem;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      body {
+        font-size: 25px;
+        animation: BackGroundTransition 25s infinite;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: trans ease-in-out;
+        margin: 0;
+        padding: 0;
+        background-image: url("../attachments/image1.avif");
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      @keyframes BackGroundTransition {
+        0% {
+          background-image: url("../attachments/image1.avif");
+          background-size: cover;
+        }
+        25% {
+          background-image: url("../attachments/image2.webp");
+          background-size: cover;
+        }
+        50% {
+          background-image: url("../attachments/image3.jpg");
+          background-size: cover;
+        }
+        75% {
+          background-image: url("../attachments/image4.webp");
+          background-size: cover;
+        }
+        100% {
+          background-image: url("../attachments/image1.avif");
+        }
+      }
+
+      #title-of-page {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        height: 6vh;
+      }
+
+      .box {
+        background-color: var(--color-secondary);
+        padding: 8px 12px;
+        border-radius: 10px;
+        width: auto;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.1);
+        margin-bottom: 12px;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        background-color: var(--color-main);
+        border: 2px;
+      
+      }
+
+      .box h2 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 13px;
+        text-align: center;
+        padding: 4px;
+      }
+      #container {
+        display: flex;
+        gap: 34px;
+        margin: 18px;
+        width: 90%;
+        justify-content: space-evenly;
+        margin-top: 59px;
+        flex: 1;
+      }
+
+      footer h1 {
+        font-size: 14px;
+        font-style: normal;
+      }
+      #text {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-secondary);
+        padding: 18px;
+        border-radius: 12px;
+        width: 75%;
+        max-width: 650px;
+        position: relative;
+        margin-bottom: 220px;
+        margin-left: 250px;
+        box-shadow: rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      #text:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        background-color: var(--color-main);
+        border: 2px;
+      }
+      #text p {
+        font-family: "Times New Roman", Times, serif;
+        padding: 9px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="box">
+        <h2>What is 'Track The Action'?</h2>
+      </div>
+      <a href="main.html">
+        <div class="box">
+          <h2>Home</h2>
+        </div>
+      </a>
+    </div>
+    <div id="text">
+      <p>
+        Our <strong>"Track the Action"</strong> feature brings you closer to the fight against
+        ocean pollution. This live service provides real-time updates on every
+        ship in our fleet, showcasing their vital contributions to cleaning our
+        oceans.<br>
+        Ship Details: Learn about each vessel, including its name,
+            capacity, and current mission. <br>Garbage Collected: See the amount of
+        waste removed from the sea by each ship.<br> Live Status: Stay informed
+        about the ship's current activity, whether it's collecting,
+        transporting, or docked for maintenance.<br>Global Map: Follow the precise
+        location of our fleet worldwide, watching as they make waves in ocean
+        conservation.<br>With "Track the Action," you're not just observing —
+        you're part of the movement to create a cleaner, healthier planet.
+        Witness progress as it happens and celebrate every milestone achieved in
+        this essential mission.</p>
+      </p>
+    </div>
+  </body>
+  <!-- End of Kron Basholli and Shend Jakupi -->
+   </html>

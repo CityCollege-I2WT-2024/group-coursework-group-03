@@ -1,0 +1,79 @@
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 5vh;
+}
+/* Kron Basholli */
+body {
+  animation: BackGroundTransition 25s infinite;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  background-image: url("../attachments/image1.avif");
+}
+/* end Kron Basholli */
+
+div {
+  font-family: "Geologica", serif !important;
+}
+
+div h3 {
+  margin: 20px;
+}
+
+div p {
+  font-size: 1.7rem;
+  font-family: "Geologica", serif !important;
+}
+
+.about-img {
+  width: 200px;
+  border: 5px solid var(--color-accent);
+}
+
+.background {
+  background-color: var(--color-main);
+  color: var(--color-background);
+
+  border: 2px solid var(--color-main);
+  border-radius: 10px;
+
+  transition: all 0.2s linear;
+}
+
+.background:hover {
+  box-shadow: 4px 4px 5px 5px rgba(0, 0, 0, 0.75);
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* Kron Basholli */
+@keyframes BackGroundTransition {
+  0% {
+    background-image: url("../attachments/image1.avif");
+    background-size: cover;
+  }
+  25% {
+    background-image: url("../attachments/image2.webp");
+    background-size: cover;
+  }
+  50% {
+    background-image: url("../attachments/image3.jpg");
+    background-size: cover;
+  }
+  75% {
+    background-image: url("../attachments/image4.webp");
+    background-size: cover;
+  }
+  100% {
+    background-image: url("../attachments/image1.avif");
+  }
+}
+/* End of Kron Basholli */

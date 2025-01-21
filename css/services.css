@@ -1,0 +1,132 @@
+.container {
+  width: 80vw;
+
+  margin: auto;
+  margin-top: 5vh;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+/* Kron Basholli */
+body {
+  animation: BackGroundTransition 25s infinite;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  background-image: url("../attachments/image1.avif");
+}
+/* end Kron Basholli */
+
+.title {
+  color: var(--color-background);
+}
+
+.main-text {
+  margin: 8px 0px 35px 0px;
+  background-color: var(--color-main);
+  color: var(--color-background);
+  border: 2px solid var(--color-main);
+  border-radius: 10px;
+}
+
+.main-text h1 {
+  margin: 10px;
+}
+
+.main-text p {
+  font-size: 1.7rem;
+  padding: 15px;
+}
+
+.main-text:hover {
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.card {
+  margin: 20px 0px;
+  padding: 20px 30px;
+
+  background-color: var(--color-main);
+  color: var(--color-background);
+
+  border: 2px solid var(--color-main);
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: all 0.2s linear;
+}
+.card:hover {
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card img {
+  width: 50px;
+}
+
+.card h3 {
+  font-size: 2.3rem;
+
+  margin-left: 10px;
+}
+
+.card p {
+  font-size: 1.7rem;
+}
+
+.card div {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 10px;
+}
+
+.closing-text {
+  margin-bottom: 5vh;
+  background-color: var(--color-main);
+  color: var(--color-background);
+
+  border: 2px solid var(--color-main);
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.closing-text p {
+  font-size: 1.7rem;
+  padding: 15px;
+}
+
+.closing-text:hover {
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+/* Kron Basholli */
+@keyframes BackGroundTransition {
+  0% {
+    background-image: url("../attachments/image1.avif");
+    background-size: cover;
+  }
+  25% {
+    background-image: url("../attachments/image2.webp");
+    background-size: cover;
+  }
+  50% {
+    background-image: url("../attachments/image3.jpg");
+    background-size: cover;
+  }
+  75% {
+    background-image: url("../attachments/image4.webp");
+    background-size: cover;
+  }
+  100% {
+    background-image: url("../attachments/image1.avif");
+  }
+}
+/* End of Kron Basholli */

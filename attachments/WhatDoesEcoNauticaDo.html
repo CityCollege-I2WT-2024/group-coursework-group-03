@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       html, body
+        {
+            height: 100%;
+            font-size: 20px ;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+
+        }
+        h1{
+            font-size: 1.6em;
+            font-style: oblique;
+            text-align: center;
+            background-color: black;
+            color: white;
+            
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+       
+      
+        body{
+            font-size: 25px;
+           animation: BackGroundTransition 25s infinite;
+           background-size:cover;
+           background-repeat: no-repeat;
+           background-position:center;
+           transition: trans ease-in-out;
+           margin: 0;
+           padding:0;
+           background-image: url("image1.avif");
+           flex-direction: column;
+           justify-content: space-between;
+         
+           
+
+        }
+        @keyframes BackGroundTransition {
+
+            0%{
+                background-image: url("image1.avif");
+                background-size: cover;
+            }
+            25%{
+                background-image: url("image2.webp");
+                background-size: cover;
+            }
+            50%{
+                background-image: url("image3.jpg");
+                background-size: cover;
+            }          
+            75%{
+                background-image: url("image4.webp");
+                background-size: cover;
+
+            }
+            100%{
+                background-image: url("image1.avif");
+            }
+        }
+
+
+
+        
+        #title-of-page{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 6vh;        
+        }
+       
+        
+       
+
+    
+       .box{
+        background-color: #87ceeb;
+        padding: 4px;
+        border-radius: 10px;
+        width: 170px;
+        text-align: center;
+        box-shadow: rgba(0,0,0,0.1);
+        margin-bottom: 12px;
+        height: 74px;
+        cursor: pointer;
+       
+       }
+       .box:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+        background-color: deepskyblue;
+        border: 2px;
+
+       }
+
+       .box h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 21px;
+        text-align: center;
+        padding: 4px;
+       }
+       #container {
+        display: flex;
+        gap: 34px;
+        margin: 18px;
+        width: 90%;
+        justify-content: space-evenly;
+        margin-top: 59px;
+        flex: 1;
+
+        
+       }
+
+       footer{
+        background-color: black;
+        padding: 9px;
+        color:white;
+        font-size: 15px;
+        text-align: center;
+        height: 3vh;
+
+
+       }
+       footer h1{
+        font-size: 14px;
+        font-style: normal;
+
+        
+       }
+       #text{
+        display: flex;
+        flex-direction: column;
+        background-color: #87ceeb;
+        margin: 70px;
+        padding: 18px;
+        border-radius: 12px;
+        width: 75%;
+        max-width: 650px;
+        position: relative;
+        margin-bottom: 120px;
+        margin-left: 380px;
+       }
+       #text p{
+        font-family: 'Times New Roman', Times, serif;
+        padding: 9px;
+       }
+
+       
+
+        </style>
+       
+       
+      
+</head>
+<body>
+    <header>
+    <h1 id="title-of-page">
+        EcoNautica
+    </h1>
+    </header>
+    
+    
+       
+     
+     <div id="container">
+     <div class="box">
+        <h2>
+            What does EcoNautica do?
+        </h2>
+       
+     </div>
+      <a href="EcoNautica2.html">
+        <div class="box">
+        <h2>
+         Home
+        </h2>
+     </div>
+     </a>
+     
+
+   
+     </div>
+     
+
+     <div id="text">
+        <p>
+            EcoNautica is an organisation that plans on getting rid of ocean plastic pollution in the next few years.The plastic in our oceans has a terrible effect to the marine ecosystem ,such plastics can last for years which degrade into microplastics,these microplastics can be ingested by wildlife <strong>and later even the human food chain.</strong>
+        </p>
+
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+       <h1> © EcoNautica 2025. All Rights Reserved</h1>
+     </footer>
+
+
+
+</body>
+</html>

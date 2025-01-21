@@ -1,15 +1,108 @@
 <!DOCTYPE html>
-<!-- Group name:
-     Group members:
--->
-<!-- developed by: -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Coursework</title>
-</head>
-<body>
-    <p>Add your code here</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>EcoNautica</title>
+    <link rel="icon" type="image/svg+xml" href="./images/logo.svg" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav class="header">
+      <a href="" id="nav-link"
+        ><img class="nav-logo" src="./images/logo-white.png" alt=""
+      /></a>
+
+      <ul>
+        <li><a href="" class="nav-link" id="nav-link">Services</a></li>
+
+        <li><a href="" class="nav-link" id="nav-link">About Us</a></li>
+
+        <li><a href="" class="nav-link" id="nav-link">Our Team</a></li>
+
+        <li><a href="" class="nav-link" id="nav-link">Track The Action</a></li>
+
+        <li><a href="" class="nav-link" id="nav-link">Donate</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main -->
+    <div class="main" id="main">
+      <object data="./html/main.html"></object>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-main">
+        <div class="div1"><h1>EcoNautica</h1></div>
+
+        <div class="div2">
+          <h2>Contact</h2>
+          <p>EcoNautica@gmail.com</p>
+          <p>+306945281788</p>
+        </div>
+        <div class="div3"></div>
+        <div class="div4">
+          <h2>Location</h2>
+          <p>
+            1600 Pennsylvania Avenue NW, Washington, DC 20500, United States
+          </p>
+        </div>
+        <div class="div5"></div>
+      </div>
+
+      <hr />
+      <div class="footer-secondary">
+        <p>© EcoNautica 2025</p>
+
+        <div>
+          <img class="footer-img" src="./images/facebook.png" alt="" />
+          <img class="footer-img" src="./images/instagram (1).png" alt="" />
+          <img class="footer-img" src="./images/twitter.png" alt="" />
+          <img class="footer-img" src="./images/youtube.png" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Change <Main> Content
+      // Get Links & Main Div
+      const links = document.querySelectorAll("#nav-link");
+      const mainDiv = document.querySelector("#main object");
+
+      //   Loop through links( a tags)
+      links.forEach((link) => {
+        console.log(link.innerText);
+        // Listen for clicking in links
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+
+          //   Change Main Div content to the corresponding html file
+          if (this.innerText == "") {
+            mainDiv.setAttribute("data", `html/main.html`);
+          } else {
+            mainDiv.setAttribute(
+              "data",
+              `html/${this.innerText.toLowerCase()}.html`
+            );
+          }
+        });
+      });
+
+      function changeFile(data) {
+        mainDiv.setAttribute("data", data);
+      }
+    </script>
+  </body>
 </html>

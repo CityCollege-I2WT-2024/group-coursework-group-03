@@ -1,0 +1,103 @@
+/* === Navbar === */
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: var(--color-main);
+
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+.nav-logo {
+  width: auto;
+  height: 70px;
+}
+
+ul {
+  display: inline-flex;
+}
+
+ul li {
+  list-style-type: none;
+  margin: 0px 5px;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+
+  color: var(--color-background);
+  text-decoration: none;
+}
+
+/* === Footer === */
+footer {
+  color: var(--color-background);
+  background-color: var(--color-secondary);
+  padding: 20px 0px;
+
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.75);
+}
+.footer-main {
+  display: grid;
+  grid-template-columns: 2fr repeat(2, 0.5fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  margin-bottom: 20px;
+}
+.div1 {
+  grid-area: 1 / 1 / 3 / 2;
+  margin-left: 5vw;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div3 {
+  grid-area: 2 / 2 / 6 / 3;
+}
+.div4 {
+  margin-right: 5vw;
+  grid-area: 1 / 3 / 2 / 4;
+}
+.div5 {
+  grid-area: 2 / 3 / 6 / 4;
+}
+
+.footer-secondary {
+  margin-top: 5px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-secondary p {
+  font-size: 1.2rem;
+}
+
+.footer-img {
+  width: 20px;
+
+  filter: brightness(0) invert(1);
+
+  margin: 0px 2px;
+
+  transition: all 0.2s linear;
+
+  cursor: pointer;
+}
+.footer-img:hover {
+  filter: brightness(1);
+}
+
+/* === Main === */
+.main {
+  height: 80vh;
+}
+.main object {
+  width: 100%;
+  height: 100%;
+}
